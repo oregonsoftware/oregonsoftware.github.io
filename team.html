@@ -50,97 +50,68 @@
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
-      <script>
-        // Define the RSS feed URL
-        const rssFeedUrl = 'https://www.buildly.io/news/feed/';
-
-        // Define the category to filter
-        const category = 'developer';
-
-        // Define the number of items per page
-        const itemsPerPage = 10;
-
-        // Fetch the RSS feed data
-        fetch(rssFeedUrl)
-          .then(response => response.text())
-          .then(xmlString => {
-
-            // Parse the XML data
-            const parser = new DOMParser();
-            const xml = parser.parseFromString(xmlString, 'text/xml');
-
-            console.log(xml);
-
-            // Filter the entries based on the category
-            const entries = Array.from(xml.getElementsByTagName('item'))
-            //  .filter(item => Array.from(item.getElementsByTagName('category'))
-            //    .some(cat => cat.textContent === category));
-
-            // Calculate the number of pages
-            const numPages = Math.ceil(entries.length / itemsPerPage);
-
-            // Get the container element for the paginated list
-            const container = document.getElementById('paginated-list-container');
-
-            // Generate the pagination controls
-            const pagination = document.createElement('nav');
-            pagination.innerHTML = `
-              <ul class="pagination justify-content-center">
-                ${Array.from({ length: numPages }, (_, i) => `
-                  <li class="page-item${i === 0 ? ' active' : ''}">
-                    <a class="page-link" href="#" data-page="${i}">${i + 1}</a>
-                  </li>
-                `).join('')}
-              </ul>
-            `;
-            container.appendChild(pagination);
-
-            // Generate the initial page of entries
-            generateEntriesPage(0);
-
-            // Define a function to generate a page of entries
-            function generateEntriesPage(pageIndex) {
-              // Clear the existing entries
-              container.querySelectorAll('.entry').forEach(entry => entry.remove());
-
-              // Get the entries for the current page
-              const startIndex = pageIndex * itemsPerPage;
-              const endIndex = startIndex + itemsPerPage;
-              const pageEntries = entries.slice(startIndex, endIndex);
-
-              // Generate the HTML elements for the entries
-              const entriesHtml = pageEntries.map(entry => `
-                <div class="card mb-3 entry">
-                  <div class="card-body">
-                    <h5 class="card-title">${entry.getElementsByTagName('title')[0].textContent}</h5>
-                    <p class="card-text">${entry.getElementsByTagName('description')[0].textContent}</p>
-                    <a class="button lg" href="${entry.getElementsByTagName('link')[0].textContent}">READ</a> 
-                  </div>
+      <section class="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Our Team</h2>
+            <p>Meet our talented team members</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/testimonials/andy.jpeg" alt="">
+                <h4>Greg</h4>
+                <span>Chief Executive Officer</span>
+                <p>
+                  John is the CEO of Oregon Software with over 20 years of experience in the software industry, specializing in cloud architectures and scalable solutions.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
-              `).join('');
-
-              // Add the entries to the container
-              const entriesContainer = document.createElement('div');
-              entriesContainer.innerHTML = entriesHtml;
-              container.appendChild(entriesContainer);
-            }
-
-            // Attach event listeners to the pagination links
-            pagination.querySelectorAll('a').forEach(link => {
-              link.addEventListener('click', event => {
-                event.preventDefault();
-                pagination.querySelectorAll('.active').forEach(activeLink => activeLink.classList.remove('active'));
-                link.parentNode.classList.add('active');
-                generateEntriesPage(parseInt(link.getAttribute('data-page')));
-              });
-            });
-          });
-
-      </script>
-      <div id="paginated-list-container" class="container">
-        
-      </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/testimonials/andy.jpeg" alt="">
+                <h4>Maryna</h4>
+                <span>Chief Product Officer</span>
+                <p>
+                  Maryna is the CPO of Oregon Software, specializing in product management, team growth and recruitment.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/testimonials/andy.jpeg" alt="">
+                <h4>Rahul</h4>
+                <span>Chief Operating Officer</span>
+                <p>
+                  Rahul is the COO of Oregon Software, ensuring smooth operations and overseeing project management.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
+
+  </section>
+    
 
   </main><!-- End #main -->
 
@@ -222,9 +193,6 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-
-<!-- Feth Jokes JS File -->
-<script src="assets/js/jokes.js"></script>
 
 </body>
 
