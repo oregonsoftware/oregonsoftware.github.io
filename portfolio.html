@@ -5,211 +5,608 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Oregon Software - Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <!-- Primary Meta Tags -->
+  <title>Custom Software Development Portfolio | Oregon Software - Nearshore Development Examples</title>
+  <meta name="title" content="Custom Software Development Portfolio | Oregon Software - Nearshore Development Examples">
+  <meta name="description" content="Explore Oregon Software's portfolio showcasing innovative custom software development projects, mobile apps, cloud solutions, and enterprise applications. See why we're the preferred alternative to Vibe coding.">
+  <meta name="keywords" content="custom software development portfolio, nearshore development examples, mobile app development showcase, cloud software solutions, enterprise applications, web development portfolio, software consulting case studies, vibe coding alternative projects, app development examples, Oregon Software portfolio">
+  
+  <!-- Geo Meta Tags -->
+  <meta name="geo.region" content="US-OR">
+  <meta name="geo.placename" content="Portland">
+  <meta name="geo.position" content="45.5152;-122.6784">
+  <meta name="ICBM" content="45.5152, -122.6784">
+  
+  <!-- Business Meta Tags -->
+  <meta name="author" content="Oregon Software">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://oregonsoftware.com/portfolio.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oregonsoftware.com/portfolio.html">
+  <meta property="og:title" content="Custom Software Development Portfolio | Oregon Software">
+  <meta property="og:description" content="Explore innovative custom software development projects, mobile apps, and cloud solutions. See our nearshore development expertise and discover why we're the preferred alternative to Vibe coding.">
+  <meta property="og:image" content="https://oregonsoftware.com/assets/img/hero-img.png">
+  <meta property="og:image:alt" content="Oregon Software Portfolio - Custom Software Development Examples">
+  <meta property="og:site_name" content="Oregon Software">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://oregonsoftware.com/portfolio.html">
+  <meta property="twitter:title" content="Custom Software Development Portfolio | Oregon Software">
+  <meta property="twitter:description" content="Explore innovative custom software development projects and mobile apps. See our nearshore development expertise and alternative to Vibe coding solutions.">
+  <meta property="twitter:image" content="https://oregonsoftware.com/assets/img/hero-img.png">
+  <meta property="twitter:image:alt" content="Oregon Software Portfolio - Custom Software Development Examples">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#059669">
+  <meta name="msapplication-TileColor" content="#059669">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Structured Data for Portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Custom Software Development Portfolio",
+    "description": "Portfolio showcasing Oregon Software's custom software development projects, mobile apps, cloud solutions, and enterprise applications",
+    "url": "https://oregonsoftware.com/portfolio.html",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Software Development Projects",
+      "description": "Examples of custom software development, mobile app development, and cloud solutions",
+      "numberOfItems": 4
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "Oregon Software",
+      "description": "Custom software development company specializing in nearshore development teams and enterprise solutions",
+      "url": "https://oregonsoftware.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/oregon-software"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portland",
+        "@type": "CreativeWork",
+        "addressRegion": "OR",
+        "addressCountry": "US"
+      }
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Oregon Software",
+      "telephone": "+1-503-555-0100",
+      "email": "info@oregonsoftware.com"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics (GA4) - Replace YOUR_MEASUREMENT_ID with your actual GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_MEASUREMENT_ID');
+  </script>
+
+  <!-- LinkedIn Insight Tag -->
+  <script type="text/javascript">
+  _linkedin_partner_id = "7772668";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script><script type="text/javascript">
+  (function(l) {
+  if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+  window.lintrk.q=[]}
+  var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);})(window.lintrk);
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7772668&fmt=gif" />
+  </noscript>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+            'heading': ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'brand': {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            },
+            'oregon': {
+              500: '#596808',
+              600: '#4d5a07',
+              700: '#414d06',
+            }
+          }
+        }
+      }
+    }
+  </script>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="font-sans text-gray-800 bg-white">
 
+  <!-- Header -->
+  <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      
+      <h1 class="text-2xl font-heading font-bold">
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="assets/img/logo.png" alt="Oregon Software" class="h-12 w-auto">
+          <span class="text-oregon-600">Oregon Software</span>
+        </a>
+      </h1>
 
-  <main id="main">
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-oregon-600 transition-colors font-medium">Home</a>
+        <a href="portfolio.html" class="text-oregon-600 font-medium">Portfolio</a>
+        <a href="index.html#about" class="text-gray-700 hover:text-oregon-600 transition-colors font-medium">About</a>
+        <a href="index.html#services" class="text-gray-700 hover:text-oregon-600 transition-colors font-medium">Services</a>
+        <a href="team.html" class="text-gray-700 hover:text-oregon-600 transition-colors font-medium">Team</a>
+        <a href="index.html#about" class="bg-oregon-600 text-white px-6 py-2 rounded-full hover:bg-oregon-700 transition-colors font-medium">Get Started</a>
+      </nav>
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
+      <!-- Mobile menu button -->
+      <button class="md:hidden flex items-center px-3 py-2 border rounded text-gray-700 border-gray-300 hover:text-oregon-600 hover:border-oregon-600" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio </h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio </li>
-          </ol>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden bg-white border-b border-gray-100" id="mobile-menu">
+      <div class="px-4 py-2 space-y-2">
+        <a href="index.html" class="block py-2 text-gray-700 hover:text-oregon-600">Home</a>
+        <a href="portfolio.html" class="block py-2 text-oregon-600">Portfolio</a>
+        <a href="index.html#about" class="block py-2 text-gray-700 hover:text-oregon-600">About</a>
+        <a href="index.html#services" class="block py-2 text-gray-700 hover:text-oregon-600">Services</a>
+        <a href="team.html" class="block py-2 text-gray-700 hover:text-oregon-600">Team</a>
+        <a href="index.html#about" class="block py-2 bg-oregon-600 text-white px-4 rounded-full text-center mt-4">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Breadcrumbs -->
+    <section class="py-8 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <h2 class="text-3xl font-heading font-bold text-gray-900">Portfolio</h2>
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+              <li class="inline-flex items-center">
+                <a href="index.html" class="text-oregon-600 hover:text-oregon-700 transition-colors">Home</a>
+              </li>
+              <li>
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 text-gray-400 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-500">Portfolio</span>
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-16 lg:py-24">
+      <div class="container mx-auto px-4" data-aos="fade-up">
+        
+        <!-- Filter Buttons -->
+        <div class="flex justify-center mb-12">
+          <div class="bg-gray-100 p-2 rounded-full">
+            <button class="filter-btn active px-6 py-2 rounded-full transition-all duration-300 bg-oregon-600 text-white" data-filter="*">All</button>
+            <button class="filter-btn px-6 py-2 rounded-full transition-all duration-300 hover:bg-oregon-100" data-filter=".filter-app">App</button>
+            <button class="filter-btn px-6 py-2 rounded-full transition-all duration-300 hover:bg-oregon-100" data-filter=".filter-card">Card</button>
+            <button class="filter-btn px-6 py-2 rounded-full transition-all duration-300 hover:bg-oregon-100" data-filter=".filter-web">Web</button>
+          </div>
         </div>
 
+        <!-- Portfolio Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-container">
+          
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio-item filter-app group" data-aos="fade-up" data-aos-delay="100">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.1.jpeg" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" alt="App Project 1">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h4 class="text-xl font-heading font-bold mb-2">Mobile Application</h4>
+                <p class="text-gray-200 mb-4">Innovative mobile app solution</p>
+                <div class="flex space-x-3">
+                  <button class="lightbox-btn bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors" data-src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.1.jpeg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                  </button>
+                  <a href="#" class="bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item filter-web group" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.2.jpeg" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" alt="Web Project 1">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h4 class="text-xl font-heading font-bold mb-2">Web Application</h4>
+                <p class="text-gray-200 mb-4">Modern responsive web solution</p>
+                <div class="flex space-x-3">
+                  <button class="lightbox-btn bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors" data-src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.2.jpeg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                  </button>
+                  <a href="#" class="bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio-item filter-card group" data-aos="fade-up" data-aos-delay="300">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.3.jpeg" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" alt="Card Project 1">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h4 class="text-xl font-heading font-bold mb-2">Dashboard Design</h4>
+                <p class="text-gray-200 mb-4">Intuitive dashboard interface</p>
+                <div class="flex space-x-3">
+                  <button class="lightbox-btn bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors" data-src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.3.jpeg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                  </button>
+                  <a href="#" class="bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 4 -->
+          <div class="portfolio-item filter-app group" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.4.jpeg" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" alt="App Project 2">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h4 class="text-xl font-heading font-bold mb-2">Enterprise Solution</h4>
+                <p class="text-gray-200 mb-4">Scalable enterprise application</p>
+                <div class="flex space-x-3">
+                  <button class="lightbox-btn bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors" data-src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.4.jpeg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                  </button>
+                  <a href="#" class="bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
+  </main>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="py-16 lg:py-20">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="lg:col-span-2">
+            <h3 class="text-2xl font-heading font-bold mb-6">Oregon Software</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+              Innovation driven software development company empowering businesses through cutting-edge technology solutions and expert consultation.
+            </p>
+            <div class="space-y-2 text-gray-300">
+              <p>Portland, Oregon</p>
+              <p>United States</p>
+              <p class="pt-2">
+                <strong class="text-white">Email:</strong> 
+                <a href="mailto:info@oregonsoftware.com" class="text-oregon-400 hover:text-oregon-300 transition-colors">
+                  info@oregonsoftware.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Useful Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Useful Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="index.html" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="team.html" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Team
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Mobile App
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Enterprise Projects
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Business Applications
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Cloud Architecture
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-oregon-400 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  Team Enhancement
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.2.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 1</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.4.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/portfolio/Oregon Software Portfolio copy/Oregon Software Portfolio copy.4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-   
-
-  </main><!-- End #main -->
-
- <!-- ======= Footer ======= -->
- <footer id="footer">
-
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6 footer-contact">
-          <h3>Oregon Software</h3>
-          <p>
-            Portland, Oregon <br>
-            United States <br><br>
-            <strong>Email:</strong> info@oregonsoftware.com<br>
-          </p>
-        </div>
-
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="portfolio-details.html">Portfolio</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="team.html">Team</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Mobile App</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Enterprise Projects</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Buisness Application Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Scalability and Cloud Architectures</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Team Enhancement</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <div class="copyright-wrap d-md-flex py-4">
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Oregon Software</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://www.twitter.com/radtherapydev" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/openbuild" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
 
+    <!-- Bottom Footer -->
+    <div class="border-t border-gray-800">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div class="text-gray-300 text-center md:text-left">
+            &copy; Copyright <strong class="text-white">Oregon Software</strong>. All Rights Reserved
+          </div>
+          <div class="flex space-x-4">
+            <a href="https://www.twitter.com/radtherapydev" class="bg-gray-800 hover:bg-oregon-600 p-3 rounded-full transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/openbuild" class="bg-gray-800 hover:bg-oregon-600 p-3 rounded-full transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <button id="back-to-top" class="bg-oregon-600 hover:bg-oregon-700 text-white p-3 rounded-full shadow-lg transform translate-y-20 opacity-0 transition-all duration-300">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </button>
   </div>
-</footer><!-- End Footer -->
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-<div id="preloader"></div>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center">
+    <div class="relative max-w-4xl mx-auto p-4">
+      <button id="lightbox-close" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors">&times;</button>
+      <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[80vh] object-contain rounded-lg">
+    </div>
+  </div>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
 
-<!-- Feth Jokes JS File -->
-<script src="assets/js/jokes.js"></script>
+    // Back to top button
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+        backToTopBtn.classList.add('translate-y-0', 'opacity-100');
+      } else {
+        backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+        backToTopBtn.classList.remove('translate-y-0', 'opacity-100');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Portfolio filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-oregon-600', 'text-white');
+          b.classList.add('hover:bg-oregon-100');
+        });
+        
+        // Add active class to clicked button
+        btn.classList.add('active', 'bg-oregon-600', 'text-white');
+        btn.classList.remove('hover:bg-oregon-100');
+        
+        const filter = btn.getAttribute('data-filter');
+        
+        portfolioItems.forEach(item => {
+          if (filter === '*' || item.classList.contains(filter.substring(1))) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 10);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxBtns = document.querySelectorAll('.lightbox-btn');
+
+    lightboxBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-src');
+        lightboxImg.src = src;
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    lightboxClose.addEventListener('click', () => {
+      lightbox.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
 
